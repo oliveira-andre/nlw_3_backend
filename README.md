@@ -82,3 +82,28 @@ localhost:3333/orphanages' | jq
   }
   ```
 </details>
+
+<details>
+  <summary>Show</summary>
+
+  curl
+  ```
+   curl -H 'content-type: application/json' -X "GET" 'http://localhost:3333/orphanages/1' | jq
+  ```
+
+  status `200 OK`
+
+  response
+  ```
+  {
+    "id": 1,
+    "name": "Lar das meninas",
+    "latitude": -27.2104,
+    "longitude": -49.6291,
+    "about": "Sobre o orfanato",
+    "instructions": "Venha visitar",
+    "opening_hours": "Das 8h ate 18h",
+    "open_on_weekends": true
+  }
+  ```
+</details>
